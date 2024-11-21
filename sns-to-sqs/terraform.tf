@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
     bucket = "terraform-state"
-    key    = "terraform/state/sqs.tfstate"
+    key    = "terraform/state/sns-to-sqs.tfstate"
     region = "us-east-1"
     // The endpoint is specific to LocalStack
     endpoints = {
